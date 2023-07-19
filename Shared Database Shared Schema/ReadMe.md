@@ -1,13 +1,13 @@
 # Multi-tenancy in SpringBoot
-## Shared Database and Separate Schema
+## Shared Database and Shared Schema
 
 - Multi-tenancy is a software architecture where a single software instance can serve multiple, distinct user groups.
 - Software-as-a-service (SaaS) offerings are an example of multi-tenant architecture.
 - Each customer is called a tenant. Tenants can be given the ability to customise some parts of the application
 - There are three main multi-tenancy model type:
   - Separate Database
-  - Shared Database and Separate Schema (this repository) 
-  - Shared Database and Shared Schema
+  - Shared Database and Separate Schema 
+  - Shared Database and Shared Schema (this repository)
 
 ### Profile Management Application
 
@@ -32,13 +32,9 @@ Below Operations are provided as REST API calls.
 
 ###### Features:
 * It can connect to both RDBMS and No-SQL database for the operations.
-
 * It uses H2 as the Relational Database and Mongo DB as No-SQL database.
-
 * It uses spring profiles to choose the RDBMS or No-SQL Databases.
-
 * It uses spring-boot-data-JPA for the H2 DB.
-
 * It also integrates with Flyway DB (https://flywaydb.org/) for database migration.
 
 
